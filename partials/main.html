@@ -4,11 +4,11 @@
 
 		<div class="container">
 
-			<h3 id="data">Insert your data
+			<h3 id="data">أدخل البيانات المتوفرة لديك
 				<button type="button"
 				class="choose btn btn-default"
 				ng-model="sample"
-				placeholder="or choose one of our samples"
+				placeholder="أو إختر من إحدى العينات"
 				ng-options="s as s.title for s in samples" bs-select>
 			</button>
 
@@ -29,7 +29,7 @@
 			<textarea ui-codemirror="{ 
 			lineNumbers : true,
 			lineWrapping : true,
-			placeholder : 'Paste your text or drop a file here. No data on hand? Try one of our sample datasets!'
+			placeholder : 'أدخل البيانات هنا أو إنقلها من أحد الجداول وإلصقها هنا، وإن لم تكن لديك بيانات يمكنك إستخدام إحدى العينات المتوفرة هنا'
 		}"
 		ng-model="text">
 	</textarea>
@@ -38,7 +38,7 @@
 <div raw-table class="data-table" data-ng-show="dataView == 'table'"></div>
 
 <div>
-	<div data-ng-show="!loading && !data.length && !error" class="alert"><i class="fa fa-hand-o-right breath-right"></i> Not sure how it works? <a href="http://raw.densitydesign.org/how-it-works/">Take a look at this video</a> or <a href="https://github.com/densitydesign/raw/wiki/FAQs">visit our FAQs</a></div>
+	<div data-ng-show="!loading && !data.length && !error" class="alert"><i class="fa fa-hand-o-right breath-right"></i> غير متأكد كيف يعمل؟ <a href="http://raw.densitydesign.org/how-it-works/">شاهد هذا الفيديو</a> أو <a href="https://github.com/densitydesign/raw/wiki/FAQs"> إقرأ الأسئلة الشائعة</a></div>
 	<div data-ng-show="!loading && !error && data.length" class="alert alert-success"><i class="fa fa-thumbs-up breath-right"></i><strong>{{data.length}}</strong> records in your data have been successfully parsed!</div>
 	<div data-ng-show="error" class="alert alert-warning"><i class="fa fa-thumbs-down breath-right"></i><strong>Whoops!</strong> Please, check line {{error+1}}</div>
 	<div data-ng-show="loading" class="alert"><i class="fa breath-right fa-refresh fa-spin"></i>Loading your data. Please wait.</div>
@@ -63,7 +63,7 @@
 		<div>
 
 			<h3 id="layout">
-				Choose a Chart	
+				إختر نوعا من الرسوم البيانية	
 			</h3>
 
 
@@ -98,7 +98,7 @@
 										<i class="fa fa-plus-square"></i>
 									</div>
 									<p class="layout-inner" >
-										<span class="layout-title">Add your charts!</span>
+										<span class="layout-title">أضف رسما بيانيا</span>
 									</p>
 								</div>
 							</a>

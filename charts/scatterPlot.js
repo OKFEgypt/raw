@@ -3,23 +3,23 @@
 	var points = raw.models.points();
 
 	var chart = raw.chart()
-		.title('Scatter Plot')
+		.title('منحنى النقاط المبعثرة')
 		.description(
             "A scatter plot, scatterplot, or scattergraph is a type of mathematical diagram using Cartesian coordinates to display values for two variables for a set of data. The data is displayed as a collection of points, each having the value of one variable determining the position on the horizontal axis and the value of the other variable determining the position on the vertical axis. This kind of plot is also called a scatter chart, scattergram, scatter diagram, or scatter graph.")
 		.thumbnail("imgs/scatterPlot.png")
 		.model(points)
 
 	var width = chart.number()
-		.title("Width")
+		.title("العرض")
 		.defaultValue(1000)
 		.fitToWidth(true)
 
 	var height = chart.number()
-		.title("Height")
+		.title("الإرتفاع")
 		.defaultValue(500)
 
 	var maxRadius = chart.number()
-		.title("max radius")
+		.title("الحد الأقصى لنصف القطر")
 		.defaultValue(20)
 
 	var useZero = chart.checkbox()
@@ -27,7 +27,7 @@
 		.defaultValue(false)
 
 	var colors = chart.color()
-		 .title("Color scale")
+		 .title("مدى الألوان")
 
 	var showPoints = chart.checkbox()
 		.title("show points")

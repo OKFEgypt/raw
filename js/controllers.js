@@ -7,10 +7,10 @@ angular.module('raw.controllers', [])
   .controller('RawCtrl', function ($scope, dataService) {
 
     $scope.samples = [
-      { title : 'Cars (multivariate)', url : 'data/multivariate.csv' },
-      { title : 'Movies (dispersions)', url : 'data/dispersions.csv' },
-      { title : 'Music (flows)', url : 'data/flows.csv' },
-      { title : 'Cocktails (correlations)', url : 'data/correlations.csv' }
+      { title : 'سيارات (multivariate)', url : 'data/multivariate.csv' },
+      { title : 'أفلام (dispersions)', url : 'data/dispersions.csv' },
+      { title : 'موسيقى (flows)', url : 'data/flows.csv' },
+      { title : 'كوكتيلات (correlations)', url : 'data/correlations.csv' }
     ]
 
     $scope.$watch('sample', function (sample){

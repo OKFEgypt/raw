@@ -10,13 +10,13 @@
 	// Adding a title to be displayed in the UI
  	// and limiting the type of data to Numbers only
 	var x = model.dimension() 
-		.title('X Axis')
+		.title('الإحداث س')
 		.types(Number)
 
 	// Y axis dimension
 	// Same as X
 	var y = model.dimension() 
-		.title('Y Axis')
+		.title('الإحداث ص')
 		.types(Number)
 
 	// Mapping function
@@ -47,17 +47,17 @@
 
 	// Width
 	var width = chart.number()
-		.title('Width')
+		.title('العرض')
 		.defaultValue(900)
 
 	// Height
 	var height = chart.number()
-		.title('Height')
+		.title('الإرتفاع')
 		.defaultValue(600)
 
 	// A simple margin
 	var margin = chart.number()
-		.title('margin')
+		.title('الهامش')
 		.defaultValue(10)
 
 	// Drawing function
